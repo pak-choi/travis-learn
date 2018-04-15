@@ -1,0 +1,13 @@
+language: python
+notifications:
+  email: false
+sudo: false
+python:
+  - 3.6
+
+install:
+  - pip install --user codecov
+script:
+  - corverage run main.py
+after_success:
+  - codecov
