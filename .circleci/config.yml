@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
           name: install dependencies
-          command: pip install codecov coverage
+          command: pip install --user codecov coverage
 
       - run:
           name: run tests
