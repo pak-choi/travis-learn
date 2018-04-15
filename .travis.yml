@@ -6,7 +6,7 @@ python:
   - 3.6
 
 install:
-  - pip install --user codecov
+  - pip install codecov
 script:
   - corverage run main.py
 after_success:
